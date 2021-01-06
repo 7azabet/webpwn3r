@@ -3,6 +3,7 @@
 # By Ebrahim Hegazy - twitter.com/zigoo0
 # First demo conducted 12Apr-2014 @OWASP Chapter Egypt
 # https://www.owasp.org/index.php/Cairo
+# Regards to u my bro (zegoo0) , Go on I encourage U :)
 import re
 import urllib
 from headers import *
@@ -42,7 +43,7 @@ def urls_or_list():
 			print ga.red +"\n [Warning] "+ ga.end + ga.bold+"%s"%url +ga.end + ga.red +" is not a valid URL"+ga.end			
 			print ga.red +" [Warning] You should write a Full URL .e.g http://site.com/page.php?id=value \n"+ ga.end
 			exit()
-	if url_or_list =="2":
+	elif url_or_list =="2":
 		 urls_list = raw_input( ga.green+" [!] Enter the list file name .e.g [list.txt]: "+ga.end)
 		 open_list = open(urls_list).readlines()
 		 for line in open_list:
